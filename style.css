@@ -1,6 +1,8 @@
-html {
+html body{
   height: 100%;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 .wrapper-grid{
   display: grid;
@@ -23,16 +25,16 @@ html {
 }
 #left-header-contenair{
   display: flex;
-  width: 40%;
+  width: 30%;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 #right-header-contenair{
   display: flex;
-  width: 60%;
+  width: 70%;
   justify-content: flex-end;
-  align-items: center;
+  align-items:flex-end;
 }
 #button-menu{
   display: flex;
@@ -54,10 +56,16 @@ html {
   margin: 0.3rem;
   color: #f2f2f2;
 }
+#button-menu:hover span{
+  background-color: #d92332;
+}
+#button-menu:hover #submenu-main{
+  display: flex;
+}
 #logo{
   display: flex;
-  max-width: 250px;
-  max-height: 100px;
+  max-width: auto;
+  max-height: 10rem;
 }
 #logo a{
   display: flex;
@@ -72,12 +80,15 @@ html {
   font-size: 0.8rem;
   font-weight: 300;
 }*/
+
+
 #navbar-menu{
-  display: flex;
+  display: none;
   min-width: 70%;
   justify-content: space-between;
   list-style-type: none;
   background-color: #f2f2f2;
+  padding: 0;
   
 }
 #navbar-menu li{
@@ -92,12 +103,16 @@ html {
   color: #d92332;
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: 300;
-}
-#navbar-menu li a:hover{
-  color: #d92332;
   font-weight: bold;
 }
+#navbar-menu li a:hover{
+  color: #262526;
+  font-weight: bold;
+}
+#navbar-menu li:hover #submenu-service{
+  display: flex;
+}
+
 #identification li{
   display: flex;
   justify-content: center;
@@ -110,11 +125,12 @@ html {
   color: #d92332;
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: bold;
 }
 #identification li a:hover{
-  color: #d92332;
+  color: #262526;
   font-weight: bold;
+  text-decoration: none;
 }
 #basket li{
   display: flex;
@@ -122,6 +138,7 @@ html {
   align-items: center;
   outline: none;
   cursor: pointer;
+  color: #d92332
 }
 #basket a{
   color: #d92332;
@@ -132,11 +149,148 @@ html {
 #basket a:hover{
   color: #d92332;
   font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* ----- HEADER SOUS MENU -----  */
+/* ----- sous menu main -----*/
+#submenu-main{
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 1px;
+  box-shadow: 2px 4px 10px #262526;
+  color: #262526;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem;
+}
+#submenu-main .submenu-main-list{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+#submenu-main .submenu-main-list a{
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  color: #262526;
+  background-color: #f2f2f2;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+#submenu-main .submenu-main-list a:hover{
+  min-width: 100%;
+  background-color: #262526;
+  color: #f2f2f2;
+  font-weight: normal;
+}
+#submenu-main .submenu-main-list:hover #submenu-main-list-service{
+  display: flex;
+}
+/* ----- END sous menu main -----  */
+/* ----- sous menu service du sous menu main -----  */
+#submenu-main-list-service{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 270px;
+  box-shadow: 2px 4px 10px #262526;
+  width: 100%;
+  color: #262526;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem 1rem 1rem 1rem;
+}
+#submenu-main-list-service li{
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  list-style-type: none;
+}
+#submenu-main-list-service li a{
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  color: #d92332;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 
-
-
+/* ----- SOUS MENU SERVICE NAVBAR -----  */
+#submenu-service{
+  display: none;
+  position: absolute;
+  top: 163px;
+  box-shadow: 2px 4px 10px #262526;
+  color: #262526;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  
+}
+#submenu-service .submenu-list{
+  display: flex;
+  width:100%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  list-style-type: none;
+  
+  
+}
+#submenu-service .submenu-list a{
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  color: #262526;
+  background-color: #f2f2f2;
+  font-weight: normal;
+  font-size: 1.5rem;
+  
+  
+  /*list-style-type: none;*/
+}
+#submenu-service .submenu-list a:hover{
+  display: flex;
+  background-color: #262526;
+  color: #f2f2f2;
+  font-weight: normal;
+  
+}
+/* ----- END sous menu service -----  */
 
 /* ----- MAIN ----- */
 #main-content{
@@ -154,5 +308,42 @@ html {
   color: #fff;
   padding: 1rem;
 }
+
+
+
+
+
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (min-width: 1024px) {
+  #navbar-menu{
+    display: flex;
+  }
+}
+@media screen and (min-width: 260px) and (max-width: 1023px) {
+  #navbar-menu{
+    display: none;
+  }
+}
+/*@media screen and (max-width: 1024px){
+  #navbar-menu{
+    display: none;
+  }
+  /*#button-menu{
+    display: flex;
+  }
+  #button-menu:hover #submenu-main{
+    display: none;
+  }
+  #submenu-main{
+    display: none;
+  }
+  #submenu-main-list-service{
+    display: none;
+  }
+  #submenu-service{
+    display: none;
+  }
+}*/
 
 
