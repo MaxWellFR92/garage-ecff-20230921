@@ -318,6 +318,7 @@ html body{
   padding: 1rem;
   background-color: lightcoral;
 }
+/* ----- CONTENAIR SERVICE ----- */
 #service-contenair{
   display: flex;
   width: 100%;
@@ -325,7 +326,143 @@ html body{
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: lightblue;
+  background-color: #d92332;
+}
+#service-content{
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #f2f2f2;
+  font-weight: bold;
+  
+}
+#service-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8";
+  height: 100%;
+  width: 100%;
+  
+}
+#service1{
+  grid-area: box1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+  
+  
+}
+#service2{
+  grid-area: box2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service3{
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service4{
+  grid-area: box4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service5{
+  grid-area: box5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service6{
+  grid-area: box6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service7{
+  grid-area: box7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+}
+#service8{
+  grid-area: box8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+
+}
+.card-service{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border: solid 1px #1a1a1a;
+  border-radius: 10px;
+  width: 15rem;
+  height: 20rem;
+  background: linear-gradient(135deg, #d92332, #f2f2f2);
+  box-shadow: 2px 4px 10px #262526;
+}
+.card-service h6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: solid 1px #1a1a1a;
+  width: 100%;
+  height: 3rem;
+}
+.card-service a img{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  max-height: 8rem;
+  max-width: 8rem;
+}
+.card-service:hover{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: solid  3px #f2f2f2;
+  transform: scale(1.1);
+  
 }
 #used-car-contenair{
   display: flex;
