@@ -19,25 +19,29 @@ html body{
 #header-content{
   grid-area: header;
   display: flex;
+  
   background-color: #f2f2f2;
   color: #fff;
   padding: 1rem;
 }
 #left-header-contenair{
   display: flex;
-  width: 30%;
+  /*width: 30%;*/
+  flex-shrink: 1;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 #right-header-contenair{
   display: flex;
-  width: 70%;
+  /*width: 70%;*/
+  flex-grow: 1;
   justify-content: flex-end;
-  align-items:flex-end;
+  /*align-items:flex-end;*/
+  
 }
 #button-menu{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -64,8 +68,9 @@ html body{
 }
 #logo{
   display: flex;
-  max-width: auto;
+  max-width: 22rem;
   max-height: 10rem;
+  padding-left: 3rem;
 }
 #logo a{
   display: flex;
@@ -85,7 +90,7 @@ html body{
 #navbar-menu{
   display: none;
   min-width: 70%;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   background-color: #f2f2f2;
   padding: 0;
@@ -126,27 +131,29 @@ html body{
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
+  padding-right: 3rem;
 }
 #identification li a:hover{
   color: #262526;
   font-weight: bold;
   text-decoration: none;
 }
-#basket li{
-  display: flex;
+#market li{
+  /* element caché par défaut */
+  display: none;
   justify-content: center;
   align-items: center;
   outline: none;
   cursor: pointer;
   color: #d92332
 }
-#basket a{
+#market a{
   color: #d92332;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 300;
 }
-#basket a:hover{
+#market a:hover{
   color: #d92332;
   font-weight: bold;
   font-size: 1.4rem;
@@ -319,31 +326,48 @@ html body{
   #navbar-menu{
     display: flex;
   }
+  #right-header-contenair{
+    align-items: flex-end;
+  }
 }
-@media screen and (min-width: 260px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #navbar-menu{
     display: none;
   }
-}
-/*@media screen and (max-width: 1024px){
-  #navbar-menu{
-    display: none;
-  }
-  /*#button-menu{
+  #button-menu{
     display: flex;
   }
-  #button-menu:hover #submenu-main{
+  #logo{
+    padding-left: 0rem;
+  }
+  #right-header-contenair{
+    align-items: center;
+  }
+}
+@media screen and (min-width: 260px) and (max-width: 767px) {
+  #navbar-menu{
     display: none;
   }
-  #submenu-main{
-    display: none;
+  #button-menu{
+    display: flex;
   }
-  #submenu-main-list-service{
-    display: none;
+  #logo{
+    padding-left: 0rem;
   }
-  #submenu-service{
-    display: none;
+  #right-header-contenair{
+    align-items: center;
   }
-}*/
+  #logo{
+    
+    max-width: 11rem;
+    max-height: 5rem;
+    
+  }
+  #identification li a{
+    padding-right: 1rem;
+  }
+
+}
+
 
 
