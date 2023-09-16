@@ -303,9 +303,47 @@ html body{
 #main-content{
   grid-area: main;
   display: flex;
+  flex-direction: column;
   background-color: #fff;
   color: #1a1a1a;
   padding: 1rem;
+}
+#carousel-contenair{
+  display: flex;
+  width: 100%;
+  min-height: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightcoral;
+}
+#service-contenair{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightblue;
+}
+#used-car-contenair{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightpink;
+}
+#testimony-contenair{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightgreen;
 }
 /* ----- FOOTER ----- */
 #footer-content{
@@ -365,6 +403,10 @@ html body{
   }
   #identification li a{
     padding-right: 1rem;
+  }
+  #submenu-main-list-service{
+    top: 146px;
+    left: 0px;
   }
 
 }
