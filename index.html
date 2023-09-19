@@ -11,6 +11,7 @@
   
   <body>
     <div class="wrapper-grid">
+      <!------- START HEADER ------->
       <header id="header-content">
         <div id="left-header-contenair">
           <div id="button-menu">
@@ -100,22 +101,24 @@
                 </svg>
               </a>
             </li>
-          </ul>
-          
-          
+          </ul> 
         </div>
       </header>
-
+      <!------- END HEADER ------->
+      <!------- START MAIN ------->
+      
       <main id="main-content">
+        <!------- START BANNER CAROUSEL ------->
         <div class="carousel-contenair">
           <div class="carousel-scroll">
             <img src="garage-service-01.png" alt="V.Parrot - Vente de voiture d'occasion" />
-
           </div>
         </div>
+        <!------- END BANNER CAROUSEL ------->
+        <!------- START SERVICE ------->
         <div id="service-contenair">
           <div id="service-content">
-            <h1>Le Garage</h1>
+            <h1>LE GARAGE</h1>
             <div>
               <ul id="service-grid">
                 <li id="service1">
@@ -191,17 +194,17 @@
                     </a>
                     <div class="card-down-content">
                       <h6>Equipements</h6>
-                      <p>Attelage<br>Porte-vélo<br>Porte-skis</p>
+                      <p>Tuning<br>Kit performance<br>Audio</p>
                     </div>
                   </div>
                 </li>
                 <li id="service8">
                   <div class="card-service">
                     <a href="">
-                      <img src="devis.png" alt="Devis personnalisé" />
+                      <img src="devis.png" alt="Formulaire de contact" />
                     </a>
                     <div class="card-down-content">
-                      <h6>Devis personnalisé</h6>
+                      <h6>Nous contacter</h6>
                       <p>Devis<br>Gratuit<br>Sur mesure</p>
                     </div>
                   </div>
@@ -210,9 +213,13 @@
             </div>
           </div>
         </div>
+        <!------- END SERVICE ------->
+        <!------- START USED CAR ------->
         <div  id="used-car-contenair">
           <div  id="used-car-content">
-            <h1>Le marché de l'occasion</h1>
+            <img src="usedcar-wallpaper.png" alt="V.Parrot - Vente de voiture d'occasion" />
+            <h1>LE MARCHE DE L'OCCASION</h1>
+            <h2>Dernier arrivage</h2>
             <div class="carousel-contenair">
               <div  id="carousel-scroll-usedcar">
                 <a class="scroll-left" id="scroll-left-usedcar">
@@ -220,12 +227,62 @@
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                   </svg>
                 </a>
-                  <div class="card-content">
-                    <div class="card-usedcar" id="card1-usedcar">1</div>
-                    <div class="card-usedcar" id="card2-usedcar">2</div>
-                    <div class="card-usedcar" id="card3-usedcar">3</div>
-                    <div class="card-usedcar" id="card4-usedcar">4</div>
-                    <div class="card-usedcar" id="card5-usedcar">5</div>
+                  <div class="card-content card-content-usedcar">
+                    <div class="card-usedcar" id="card1-usedcar">
+                      <div class="card-usedcar-content-img">
+                        <img src="Mazda RX7 600x400.png" alt="Mazda RX7" />
+                      </div>
+                      <div class="card-usedcar-content-text">
+                        <h6>Mazda RX7</h6>
+                        <p>1.2 12 RB Rotary<br>2001<br>Essence<br>50 000Km</p>
+                        <p>45 990 €</p>
+                        <button>Détails</button>
+                      </div>
+                    </div>
+                    <div class="card-usedcar" id="card2-usedcar">
+                      <div class="card-usedcar-content-img">
+                        <img src="tesla-model3-600x400.png" alt="Tesla Model 3" />
+                      </div>
+                      <div class="card-usedcar-content-text">
+                        <h6>Tesla Model 3</h6>
+                        <p>60Kw RWD<br>2022<br>Electrique<br>17 000Km</p>
+                        <p>33 990 €</p>
+                        <button>Détails</button>
+                      </div>
+                    </div>
+                    <div class="card-usedcar" id="card3-usedcar">
+                      <div class="card-usedcar-content-img">
+                        <img src="volksvagen-touran.png" alt="Volksvagen Touran" />
+                      </div>
+                      <div class="card-usedcar-content-text">
+                        <h6>Volksvagen Touran</h6>
+                        <p>1.5 TSI EVO 150<br>2020<br>Essence<br>28 000Km</p>
+                        <p>33 990 €</p>
+                        <button>Détails</button>
+                      </div>
+                    </div>
+                    <div class="card-usedcar" id="card4-usedcar">
+                      <div class="card-usedcar-content-img">
+                        <img src="Dodge Challenger.png" alt="Dodge Challenger SRT 8" />
+                      </div>
+                      <div class="card-usedcar-content-text">
+                        <h6>Dodge Challenger</h6>
+                        <p>6.2 V8<br>2009<br>Essence<br>77 000Km</p>
+                        <p>11 990 €</p>
+                        <button>Détails</button>
+                      </div>
+                    </div>
+                    <div class="card-usedcar" id="card5-usedcar">
+                      <div class="card-usedcar-content-img">
+                        <img src="audi A3 sportback.png" alt="Audi A3 Sportback" />
+                      </div>
+                      <div class="card-usedcar-content-text">
+                        <h6>Audi A3 Sportback</h6>
+                        <p>2.0 TDI 150<br>2016<br>Essence<br>70 000Km</p>
+                        <p>28 990 €</p>
+                        <button>Détails</button>
+                      </div>
+                    </div>
                   </div>
                 <a class="scroll-right" id="scroll-right-usedcar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -236,26 +293,195 @@
             </div>
           </div>
         </div>
+        <!------- END USED CAR ------->
+        <!------- START TESTIMONY ------->
         <div id="testimony-contenair">
           <div id="testimony-content">
-            <h1>Les témoignages</h1>
+            <h1>TEMOIGNAGES</h1>
             <div class="carousel-contenair">
               <div id="carousel-scroll-testimony">
-                <a class="scroll-left" id="scroll-left-testimony"> G </a>
-                  <div class="card-content">
-                    <div class="card-testimony" id="card1-testimony"></div>
-                    <div class="card-testimony" id="card2-testimony"></div>
-                    <div class="card-testimony" id="card3-testimony"></div>
-                    <div class="card-testimony" id="card4-testimony"></div>
-                    <div class="card-testimony" id="card5-testimony"></div>
+                <a class="scroll-left" id="scroll-left-testimony">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </a>
+                  <div class="card-content card-content-testimony">
+                    <div class="card-testimony" id="card1-testimony">
+                      <div class="card-testimony-content-img">
+                        <div class="card-testimony-content-rating">
+                          <div class="rating"><span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                          </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card-testimony-content-text">
+                        <h6>John Doe</h6>
+                        <p>Je suis très satisfait de mon achat, la voiture est en très bon état et le prix est très correcte.</p>
+                      </div>
+                    </div>
+                    <div class="card-testimony" id="card2-testimony">
+                      <div class="card-testimony-content-img">
+                        <div class="card-testimony-content-rating">
+                          <div class="rating"><span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                          </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card-testimony-content-text">
+                        <h6>Mitsuru Haruguchi</h6>
+                        <p>Je suis très satisfait de mon achat, la voiture est en très bon état et le prix est très correcte.</p>
+                      </div>
+                    </div>
+                    <div class="card-testimony" id="card3-testimony">
+                      <div class="card-testimony-content-img">
+                        <div class="card-testimony-content-rating">
+                          <div class="rating"><span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                          </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card-testimony-content-text">
+                        <h6>Kyle Larson</h6>
+                        <p>Je suis très satisfait de mon achat, la voiture est en très bon état et le prix est très correcte.</p>
+                      </div>
+                    </div>
+                    <div class="card-testimony" id="card4-testimony">
+                      <div class="card-testimony-content-img">
+                        <div class="card-testimony-content-rating">
+                          <div class="rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-testimony-content-text">
+                        <h6>John Doe</h6>
+                        <p>Je suis très satisfait de mon achat, la voiture est en très bon état et le prix est très correcte.</p>
+                      </div>
+                    </div>
+                    <div class="card-testimony" id="card5-testimony">
+                      <div class="card-testimony-content-img">
+                        <div class="card-testimony-content-rating">
+                          <div class="rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-testimony-content-text">
+                        <h6>Alex Rins</h6>
+                        <p>Je suis très satisfait de mon achat, la voiture est en très bon état et le prix est très correcte.</p>
+                      </div>
+                    </div>
                   </div>
-                <a class="scroll-right" id="scroll-right-testimony"> D </a>
+                <a class="scroll-right" id="scroll-right-testimony">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <!------- END TESTIMONY ------->
       </main>
-
+      <!------- END MAIN ------->
+      <!------- START FOOTER ------->
       <footer id="footer-content">
         <div class="footer-contenair">
           <div id="footer-grid">
@@ -303,6 +529,7 @@
                 <li><a href="#">77 Route de Labège, 31400 Toulouse</a></li>
                 <li><a href="#">+33 5 31 99 99 99</a></li>
                 <li><a href="#">vincent.parrot@boxmail.com</a></li>
+                <li><a href="#">Formulaire de contact</a></li>
                 
               </ul>
             </div>
@@ -318,16 +545,18 @@
               </ul>
             </div>
             <div id="footer-bottom">
-              <h6>Copyrith</h6>
+              <h6>Copyrith  All right reserve Desgin by : @MaxwellFR92</h6>
             </div>
           </div>
         </div>
       </footer>
-      
+      <!------- END FOOTER ------->
     </div>
+
+    <!------- SCRIPT ------->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-  
+    <!------- END SCRIPT ------->
   
   </body>
 
