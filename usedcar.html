@@ -111,109 +111,117 @@
         <!------- START BANNER CAROUSEL ------->
         <div class="carousel-contenair">
           <div class="carousel-scroll">
-            <img src="garage-service-01.png" alt="V.Parrot - Vente de voiture d'occasion" />
+            <img src="usedcar01.png" alt="V.Parrot - Vente de voiture d'occasion" />
           </div>
         </div>
         <!------- END BANNER CAROUSEL ------->
-        <!------- START SERVICE ------->
-        <div id="service-contenair">
-          <div id="service-content">
-            <h1>LE GARAGE</h1>
-            <div>
-              <ul id="service-grid">
-                <li id="service1">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="pneu.png" alt="Pneu et Amortisseur" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Pneu Amortisseur</h6>
-                      <p>Pneu<br>Amortisseur<br>Parallélisme</p>
-                  </div>
-                  </div>
-                </li>
-                <li id="service2">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="vidange.png" alt="Vidange et Révision" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Vidange Révision</h6>
-                      <p>Vidange<br>Révision<br>Freinage</p>
+        <!------- START USEDCAR ------->
+        <div  id="used-car-contenair">
+          <div  id="used-car-content">
+            <img src="usedcar-wallpaper.png" alt="V.Parrot - Vente de voiture d'occasion" />
+            <h1>LE MARCHE DE L'OCCASION</h1>
+            <div id="usedcar-grid">
+              <div class="filter-content">
+                <div class="filter-box">
+                  <div id="filter-price">
+                    <h5>Prix</h5>
+                    <div class="double-input">
+                      <input type="range" min="5000" max="100000" value="20000" class="slider" id="from-range-price" title="price">
+                      <input type="range" min="5000" max="100000" value="70000" class="slider" id="to-range-price" title="price">
                     </div>
-                  </div> 
-                </li>
-                <li id="service3">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="freinage.png" alt="Freinage" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Freinage</h6>
-                      <p>Plaquette<br>Disque<br>Frein à main</p>
-                    </div>
+                    <p><span id="from-price">0000000</span><span>€ - </span><span id="to-price">000000</span><span>€</span></p>
                   </div>
-                </li>
-                <li id="service4">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="distribution.png" alt="Distribution" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Distribution</h6>
-                      <p>Kit distribution<br>Pompe à eau<br>Kit accessoire</p>
+                  <div id="filter-year">
+                    <h5>Année</h5>
+                    <div class="double-input">
+                      <input type="range" min="2000" max="2022" value="2005" step="1" class="slider" id="from-range-year" title="year">
+                      <input type="range" min="2000" max="2022" value="2015" step="1" class="slider" id="to-range-year" title="year">
                     </div>
+                    <p><span id="from-year">0000</span><span> - </span><span>0000</span></p>
                   </div>
-                </li>
-                <li id="service5">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="batterie.png" alt="Batterie et Eclairage" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Batterie Eclairage</h6>
-                      <p>Batterie<br>Eclairage<br>Alternateur</p>
+                  <div id="filter-km">
+                    <h5>Kilométrage</h5>
+                    <div class="double-input">
+                      <input type="range" min="0" max="200000" value="5000" step="1000" class="slider" id="from-range-km" title="km">
+                      <input type="range" min="0" max="200000" value="100000" step="1000" class="slider" id="to-range-km" title="km">
                     </div>
+                    <p><span id="from-km">000000</span><span>km - </span><span>000000</span><span>km</span></p>
                   </div>
-                </li>
-                <li id="service6">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="climatisation.png" alt="Climatisation" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Climatisation</h6>
-                      <p>Recharge<br>Entretien<br>Diagnostic</p>
-                    </div>
+                </div>
+              </div>
+              <!------- START CARD GRID ------->
+              <div class="card-grid">
+                <div class="card-usedcar" id="card1-usedcar">
+                  <div class="card-usedcar-content-img">
+                    <img src="Mazda-RX7.png" alt="Mazda RX7" />
                   </div>
-                </li>
-                <li id="service7">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="equipement.png" alt="Equipements" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Equipements</h6>
-                      <p>Tuning<br>Kit performance<br>Audio</p>
-                    </div>
+                  <div class="card-usedcar-content-text">
+                    <h6>Mazda RX7</h6>
+                    <p>1.2 12 RB Rotary<br>2001<br>Essence<br>50 000Km</p>
+                    <p>45 990 €</p>
+                    <button>Détails</button>
                   </div>
-                </li>
-                <li id="service8">
-                  <div class="card-service">
-                    <a href="">
-                      <img src="devis.png" alt="Formulaire de contact" />
-                    </a>
-                    <div class="card-down-content">
-                      <h6>Nous contacter</h6>
-                      <p>Devis<br>Gratuit<br>Sur mesure</p>
-                    </div>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="card-usedcar" id="card2-usedcar">
+                  <div class="card-usedcar-content-img">
+                    <img src="Tesla-Model-3.png" alt="Tesla Model 3" />
                   </div>
-                </li>
-              </ul>
+                  <div class="card-usedcar-content-text">
+                    <h6>Tesla Model 3</h6>
+                    <p>60Kw RWD<br>2022<br>Electrique<br>17 000Km</p>
+                    <p>33 990 €</p>
+                    <button>Détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="card-usedcar" id="card3-usedcar">
+                  <div class="card-usedcar-content-img">
+                    <img src="Volksvagen-Touran.png" alt="Volksvagen Touran" />
+                  </div>
+                  <div class="card-usedcar-content-text">
+                    <h6>Volksvagen Touran</h6>
+                    <p>1.5 TSI EVO 150<br>2020<br>Essence<br>28 000Km</p>
+                    <p>33 990 €</p>
+                    <button>Détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="card-usedcar" id="card4-usedcar">
+                  <div class="card-usedcar-content-img">
+                    <img src="Dodge-Challenger.png" alt="Dodge Challenger SRT 8" />
+                  </div>
+                  <div class="card-usedcar-content-text">
+                    <h6>Dodge Challenger</h6>
+                    <p>6.2 V8<br>2009<br>Essence<br>77 000Km</p>
+                    <p>11 990 €</p>
+                    <button>Détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="card-usedcar" id="card5-usedcar">
+                  <div class="card-usedcar-content-img">
+                    <img src="Audi-A3-Sportback.png" alt="Audi A3 Sportback" />
+                  </div>
+                  <div class="card-usedcar-content-text">
+                    <h6>Audi A3 Sportback</h6>
+                    <p>2.0 TDI 150<br>2016<br>Essence<br>70 000Km</p>
+                    <p>28 990 €</p>
+                    <button>Détails</button>
+                  </div>
+                </div>
+              </div>
+              <!------- END CARD GRID ------->
+
             </div>
+            
           </div>
         </div>
-        <!------- END SERVICE ------->
+        <!------- END USEDCAR ------->
         
       </main>
       <!------- END MAIN ------->
@@ -292,6 +300,7 @@
     <!------- SCRIPT ------->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="script-usedcar.js"></script>
     <!------- END SCRIPT ------->
   
   </body>
