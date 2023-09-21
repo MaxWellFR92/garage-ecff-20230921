@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  alert("Jquery OK");
+  //alert("Bienvenue sur le site qui est en cours de construction, merci de votre compréhension ! @MaxwellFR92");
 
   $('#scroll-right-usedcar').click(function() {
     // ----- retire element first child et l'ajoute a la fin ------
