@@ -1,0 +1,29 @@
+$(document).ready(function(){
+  $('#from-range-price').on('change', function(){
+    let from = $(this).val();
+    //alert(from);
+    $('#from-price').text(from);
+  });
+  $('#from-range-year').on('change', function(){
+    let from = $(this).val();
+    //alert(from);
+    $('#from-year').text(from);
+  });
+  $('#from-range-km').on('change', function(){
+    let from = $(this).val();
+    //alert(from);
+    $('#from-km').text(from);
+  });
+
+  const cars = [{marque: 'Mazda', model:'RX7', year:2001, type:"Essence", km:50000, price:45990, img:'Mazda-RX7.png'},
+  {marque: 'Tesla', model:'Model 3', year:2022, type:"Electrique", km:17000, price:33990, img:'Tesla-Model-3.png'},
+  {marque: 'Volksvagen', model:'Touran', year:2020, type:"Essence", km:28000, price:30990, img:'Volksvagen-Touran.png'},
+  {marque: 'Dodge', model:'Challenger', year:2009, type:"Essence", km:77000, price:45990, img:'Dodge-Challenger.png'},
+  {marque: 'Audi', model:'A3 Sportback', year:2016, type:"Essence", km:110000, price:25990, img:'Audi-A3-Sportback.png'},]
+
+
+
+
+
+
+});
