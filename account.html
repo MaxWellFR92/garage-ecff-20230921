@@ -12,7 +12,7 @@
   <body class="body-account">
     <div class="wrapper-grid">
       <!------- START HEADER ------->
-      <header id="header-content">
+      <header id="header-content-account">
         <div id="left-header-contenair">
            
           <div id="enterprise">
@@ -31,7 +31,16 @@
       <!------- END HEADER ------->
       <main>
         <article>
-          <div>
+          <div id="form-content">
+            <div class="choice-content">
+              <div class="choice-connect-up">
+                <h4>Se connecter</h4>
+              </div>
+              <div class="choice-create-up">
+                <h4>Créer un compte</h4>
+              </div>
+              <!--<hr>-->
+            </div>
             <form id="form" method="post" action="#">
               <div class="field">
                 <label for="identifiant">Identifiant</label>
@@ -43,35 +52,50 @@
                 <input type="password" id="password" name="password">
                 <p id="alertPassWord">Entrez votre mot de passe</p>
               </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-                <p id="alertEmail">Entrez votre email</p>
-              </div>
-              <div class="field">
-                <label for="email-confirm">Confirmation de l'email</label>
-                <input type="text" id="email-confirm" name="email-confirm">
-                <p id="alertEmailConfirm">Confirmez votre email</p>
-              </div>
-              <div class="field">
-                <label for="lastname">Nom</label>
-                <input type="text" id="lastname" name="nom">
-                <p id="alertLastName">Entrez votre nom</p>
-              </div>
-              <div class="field">
-                <label for="firstname">Prénom</label>
-                <input type="text" id="firstname" name="prenom">
-                <p id="alertFirstName">Entrez votre prénom</p>
-              </div>   
+              <div id="field-content-create">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email">
+                  <p id="alertEmail">Entrez votre email</p>
+                </div>
+                <div class="field">
+                  <label for="email-confirm">Confirmation de l'email</label>
+                  <input type="text" id="email-confirm" name="email-confirm">
+                  <p id="alertEmailConfirm">Confirmez votre email</p>
+                </div>
+                <div class="field">
+                  <label for="lastname">Nom</label>
+                  <input type="text" id="lastname" name="nom">
+                  <p id="alertLastName">Entrez votre nom</p>
+                </div>
+                <div class="field">
+                  <label for="firstname">Prénom</label>
+                  <input type="text" id="firstname" name="prenom">
+                  <p id="alertFirstName">Entrez votre prénom</p>
+                </div> 
+              </div> 
                        
               <input type="submit" id="btn-submit" name="btn-submit">
             </form>
-            
+            <div class="choice-content">
+              <div class="choice-connect-down">
+                <a href="#">
+                  <h4>Se connecter</h4>
+                </a>
+              </div>
+              <div class="choice-create-down">
+                <a href="#">
+                  <h4>Créer un compte</h4>
+                </a>
+              </div>
+              <!--<hr>-->
+            </div>
           </div>
         </article>
       </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>-->
+    <!--<script src="script.js"></script>-->
+    <script src="script-account.js"></script>
   </body>
 </html>
