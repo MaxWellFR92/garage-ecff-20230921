@@ -882,10 +882,10 @@ html body{
   text-decoration: none;
 }
 .choice-connect-up, .choice-create-down{
-  display: none;
+  display: flex;
 }
 .choice-create-up, .choice-connect-down{
-  display: flex;
+  display: none;
 }
 /* ----- END FORM CONTENT -----*/
 /* ----- START FORM ----- */
@@ -896,7 +896,7 @@ html body{
   width: 90%;
 }
 #field-content-create{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
