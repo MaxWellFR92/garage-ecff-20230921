@@ -120,37 +120,38 @@
           <div  id="used-car-content">
             <img src="usedcar-wallpaper.png" alt="V.Parrot - Vente de voiture d'occasion" />
             <h1>LE MARCHE DE L'OCCASION</h1>
-            <div id="usedcar-grid">
+            <div id="usedcar-article-contenair">
               <div class="filter-content">
                 <div class="filter-box">
                   <div id="filter-price">
                     <h5>Prix</h5>
                     <div class="double-input">
-                      <input type="range" min="5000" max="100000" value="20000" class="slider" id="from-range-price" title="price">
-                      <input type="range" min="5000" max="100000" value="70000" class="slider" id="to-range-price" title="price">
+                      <input type="range" min="5000" max="100000" value="0" class="slider" id="from-range-price" title="price">
+                      <input type="range" min="5000" max="100000" value="100000" class="slider" id="to-range-price" title="price">
                     </div>
-                    <p><span id="from-price">0000000</span><span>€ - </span><span id="to-price">000000</span><span>€</span></p>
+                    <p><span id="from-price">0000000</span><span>€ - </span><span id="to-price">100000</span><span>€</span></p>
                   </div>
                   <div id="filter-year">
                     <h5>Année</h5>
                     <div class="double-input">
-                      <input type="range" min="2000" max="2022" value="2005" step="1" class="slider" id="from-range-year" title="year">
-                      <input type="range" min="2000" max="2022" value="2015" step="1" class="slider" id="to-range-year" title="year">
+                      <input type="range" min="2000" max="2023" value="2000" step="1" class="slider" id="from-range-year" title="year">
+                      <input type="range" min="2000" max="2023" value="2023" step="1" class="slider" id="to-range-year" title="year">
                     </div>
-                    <p><span id="from-year">0000</span><span> - </span><span>0000</span></p>
+                    <p><span id="from-year">2000</span><span> - </span><span id="to-year">2023</span></p>
                   </div>
                   <div id="filter-km">
                     <h5>Kilométrage</h5>
                     <div class="double-input">
-                      <input type="range" min="0" max="200000" value="5000" step="1000" class="slider" id="from-range-km" title="km">
-                      <input type="range" min="0" max="200000" value="100000" step="1000" class="slider" id="to-range-km" title="km">
+                      <input type="range" min="0" max="250000" value="0" step="1000" class="slider" id="from-range-km" title="km">
+                      <input type="range" min="0" max="250000" value="250000" step="1000" class="slider" id="to-range-km" title="km">
                     </div>
-                    <p><span id="from-km">000000</span><span>km - </span><span>000000</span><span>km</span></p>
+                    <p><span id="from-km">1</span><span>km - </span><span id="to-km">250000</span><span>km</span></p>
                   </div>
                 </div>
               </div>
               <!------- START CARD GRID ------->
-              <div class="card-grid">
+              <div class="update-card-usedcar">
+              <!--<div class="card-grid">
                 <div class="card-usedcar" id="card1-usedcar">
                   <div class="card-usedcar-content-img">
                     <img src="Mazda-RX7.png" alt="Mazda RX7" />
@@ -214,7 +215,8 @@
                     <button>Détails</button>
                   </div>
                 </div>
-              </div>
+              </div>-->
+            </div>
               <!------- END CARD GRID ------->
 
             </div>
