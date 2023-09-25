@@ -61,7 +61,7 @@ $(document).ready(function(){
       $(`#card${index}-usedcar #type`).text(element.type);
       $(`#card${index}-usedcar #km`).text(element.km);
       $(`#card${index}-usedcar #price`).text(element.price);
-      $(`#card${index}-usedcar img`).attr('src', `img/${element.img}`);
+      $(`#card${index}-usedcar img`).attr('src', `${element.img}`);
     })
 
   };
