@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
 
   
 
@@ -18,6 +19,7 @@ $(document).ready(function(){
     let from = $(this).val();
     //alert(from);
     $('#from-year').text(from);
+    updateList();
   });
   $('#to-range-year').on('change', function(){
     let from = $(this).val();
@@ -28,6 +30,7 @@ $(document).ready(function(){
     let from = $(this).val();
     //alert(from);
     $('#from-km').text(from);
+    updateList();
   });
   $('#to-range-km').on('change', function(){
     let from = $(this).val();
@@ -41,7 +44,7 @@ $(document).ready(function(){
     let garageUpdate = []
     
     for (let i = 0; i < garage.length; i++) {
-      if (garage[i].price > $('#from-range-price').val()) {
+      if ((garage[i].price > $('#from-range-price').val())  && (garage[i].year > $('#from-range-year').val()) && (garage[i].km > $('#from-range-km').val())) {
         garageUpdate.push(garage[i])
         console.log(garageUpdate)
       }
