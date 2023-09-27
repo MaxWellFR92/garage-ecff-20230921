@@ -6,36 +6,57 @@ $(document).ready(function(){
   // ----- START DYNAMIQUE FILTER ITEMS -----
   $('#from-range-price').on('change', function(){
     let from = $(this).val();
-    //alert(from);
     $('#from-price').text(from);
     updateList();
   });
   $('#to-range-price').on('change', function(){
-    let from = $(this).val();
-    //alert(from);
-    $('#to-price').text(from);
+    if ($(this).val() >= $('#from-range-price').val()){
+      let from = $(this).val();
+      $('#to-price').text(from);
+    } else {
+      $(this) = $('#from-range-price').val()
+      let from = $(this).val();
+      $('#to-price').text(from);
+    }
+    updateList()
+    //let from = $(this).val();
+    //$('#to-price').text(from);
   });
   $('#from-range-year').on('change', function(){
     let from = $(this).val();
-    //alert(from);
     $('#from-year').text(from);
     updateList();
   });
   $('#to-range-year').on('change', function(){
-    let from = $(this).val();
-    //alert(from);
-    $('#to-year').text(from);
+    if ($(this).val() >= $('#from-range-year').val()){
+      let from = $(this).val();
+      $('#to-year').text(from);
+    } else {
+      $(this) = $('#from-range-year').val()
+      let from = $(this).val();
+      $('#to-year').text(from);
+    }
+    updateList()
+    //let from = $(this).val();
+    //$('#to-year').text(from);
   });
   $('#from-range-km').on('change', function(){
     let from = $(this).val();
-    //alert(from);
     $('#from-km').text(from);
     updateList();
   });
   $('#to-range-km').on('change', function(){
-    let from = $(this).val();
-    //alert(from);
-    $('#to-km').text(from);
+    if ($(this).val() >= $('#from-range-km').val()){
+      let from = $(this).val();
+      $('#to-km').text(from);
+    } else {
+      $(this) = $('#from-range-km').val()
+      let from = $(this).val();
+      $('#to-km').text(from);
+    }
+    updateList()
+    //let from = $(this).val();
+    //$('#to-km').text(from);
   });
   // ----- END DYNAMIQUE FILTER ITEMS -----
 
@@ -44,7 +65,12 @@ $(document).ready(function(){
     let garageUpdate = []
     
     for (let i = 0; i < garage.length; i++) {
-      if ((garage[i].price > $('#from-range-price').val())  && (garage[i].year > $('#from-range-year').val()) && (garage[i].km > $('#from-range-km').val())) {
+      if ((garage[i].price > $('#from-range-price').val()) 
+      && (garage[i].year > $('#from-range-year').val()) 
+      && (garage[i].km > $('#from-range-km').val())
+      && (garage[i].price < $('#to-range-price').val())
+      && (garage[i].year < $('#to-range-year').val())
+      && (garage[i].km < $('#to-range-km').val())) {
         garageUpdate.push(garage[i])
         console.log(garageUpdate)
       }
