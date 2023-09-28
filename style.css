@@ -983,7 +983,7 @@ html body{
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   
 }
@@ -992,7 +992,7 @@ html body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  
 }
 .update-card-usedcar{
   display: flex;
@@ -1013,7 +1013,7 @@ html body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  
 }
 .filter-box input[type="range"]{
   position: relative;
