@@ -330,12 +330,13 @@ html body{
   flex-direction: column;
   background-color: #fff;
   color: #1a1a1a;
-  
 }
+
+/* ----- START CAROUSEL ----- */
 .carousel-contenair{
   display: flex;
   height: 40rem;
-  max-width: auto;
+  max-width: 100vw;
   justify-content: center;
   align-items: center;
   background-color: #5f5c5f;
@@ -343,12 +344,67 @@ html body{
 .carousel-scroll{
   display: flex;
   height: 100%;
-  max-width: 100vw;
+  /*max-width: 100%;*/
   overflow: hidden;
   justify-content: center;
   align-items: center;
   background-color: #262526;
 }
+.carousel-card-content{
+  display: flex;
+  animation: 16s carousel ease-in-out infinite alternate;
+}
+.carousel-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.carousel-card-image{
+  max-width: 100vw;
+}
+/* ATTENTION TERMINER LE POSITIONNEMENT DES H1 */
+.carousel-card-text{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  justify-content: center;
+  /*align-items: flex-end;*/
+  width: 50%;
+  height: 100%;
+  z-index:0;
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: black;
+  background-color: #26252636;  
+}
+.carousel-card-text-left{
+  display: flex;
+  align-items: start;
+  color: #262526;
+  padding: 0 3rem;
+}
+.carousel-card-text-right{
+  display: flex;
+  align-items: end;
+  padding: 0 3rem;
+}
+.carousel-card-text h1{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  font-size: 3rem;
+}
+.carousel-card-text p{
+  display: flex;
+  width: 40%;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+
+/* ----- END CAROUSEL ----- */
 /* ----- START CONTENAIR SERVICE ----- */
 #service-contenair{
   display: flex;
@@ -655,7 +711,7 @@ html body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  
   background-color: #d92332;
 }
 #testimony-content{
@@ -736,7 +792,7 @@ html body{
   align-items: center;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 1rem;
+  
 }
 .footer-contenair{
   display: flex;
@@ -1185,6 +1241,26 @@ html body{
   }
 
 }
+/* ----- END MEDIA QUERIES ----- */
 
+/* ----- START ANIMATION ----- */
+@keyframes carousel {
+  0% {
+    transform: translateX(-25%);
+  }
+  25%{
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+  75% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+/* ----- END ANIMATION ----- */
 
 
